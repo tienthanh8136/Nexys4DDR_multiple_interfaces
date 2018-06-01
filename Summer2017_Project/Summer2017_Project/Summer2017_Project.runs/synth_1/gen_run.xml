@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1505610675">
+  <File Type="PA-TCL" Name="nexys4fpga.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="nexys4fpga_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="nexys4fpga.vds"/>
+  <File Type="RDS-UTIL" Name="nexys4fpga_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="nexys4fpga_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="nexys4fpga.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="nexys4fpga_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="nexys4fpga_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Source/Microphone/DPRAM.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Source/Microphone/DPRAM.v"/>
+        <Attr Name="ImportTime" Val="1503037228"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Source/OV7670 VGA Camera/OV7670_Registers.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Source/OV7670 VGA Camera/OV7670_Registers.v"/>
+        <Attr Name="ImportTime" Val="1504572964"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Source/OV7670 VGA Camera/I2C_Controller.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Source/OV7670 VGA Camera/I2C_Controller.v"/>
+        <Attr Name="ImportTime" Val="1504572996"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Source/Keyboard/debouncer.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Source/Keyboard/debouncer.v"/>
+        <Attr Name="ImportTime" Val="1503204899"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Source/Microphone/Audio_Generator.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Source/Microphone/Audio_Generator.v"/>
+        <Attr Name="ImportTime" Val="1504074326"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Source/Keyboard/PWM_RGB.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Source/Keyboard/PWM_RGB.v"/>
+        <Attr Name="ImportTime" Val="1504080109"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Source/Keyboard/Buffer_Generator.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Source/Keyboard/Buffer_Generator.v"/>
+        <Attr Name="ImportTime" Val="1503797752"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Source/Common/Clock_Divider.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Source/Common/Clock_Divider.v"/>
+        <Attr Name="ImportTime" Val="1504571263"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Source/Common/sevensegment.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Source/Common/sevensegment.v"/>
+        <Attr Name="ImportTime" Val="1503204899"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Source/OV7670 VGA Camera/OV7670_Frame_Collector.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Source/OV7670 VGA Camera/OV7670_Frame_Collector.v"/>
+        <Attr Name="ImportTime" Val="1504571441"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Source/Keyboard/Converter.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Source/Keyboard/Converter.v"/>
+        <Attr Name="ImportTime" Val="1503811323"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Source/Keyboard/keyboard.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Source/Keyboard/keyboard.v"/>
+        <Attr Name="ImportTime" Val="1503806742"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Source/OV7670 VGA Camera/OV7670_Controller.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Source/OV7670 VGA Camera/OV7670_Controller.v"/>
+        <Attr Name="ImportTime" Val="1504573009"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Source/OV7670 VGA Camera/VGA_Controller.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Source/OV7670 VGA Camera/VGA_Controller.v"/>
+        <Attr Name="ImportTime" Val="1504668555"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Source/OV7670 VGA Camera/Color_Filter.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Source/OV7670 VGA Camera/Color_Filter.v"/>
+        <Attr Name="ImportTime" Val="1504739734"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Source/Common/debounce.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Source/Common/debounce.v"/>
+        <Attr Name="ImportTime" Val="1503204899"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Source/nexys4fpga.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Source/nexys4fpga.v"/>
+        <Attr Name="ImportTime" Val="1504675685"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="nexys4fpga"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Constraints/Nexys4DDR_C.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Source/Constraints/Nexys4DDR_C.xdc"/>
+        <Attr Name="ImportTime" Val="1504665503"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2016"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="Frame_Buffer"/>
+</GenRun>

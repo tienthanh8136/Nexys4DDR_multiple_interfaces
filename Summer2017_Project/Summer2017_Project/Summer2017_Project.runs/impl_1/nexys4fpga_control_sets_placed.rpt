@@ -1,0 +1,95 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Sat Sep 16 18:18:47 2017
+| Host         : Thanh-PC running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file nexys4fpga_control_sets_placed.rpt
+| Design       : nexys4fpga
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    42 |
+| Unused register locations in slices containing registers |   138 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             176 |           98 |
+| No           | No                    | Yes                    |              25 |            8 |
+| No           | Yes                   | No                     |             755 |          265 |
+| Yes          | No                    | No                     |            5973 |         2364 |
+| Yes          | No                    | Yes                    |              45 |           19 |
+| Yes          | Yes                   | No                     |             304 |           89 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++------------------------+----------------------------------------------------------+-----------------------------------------------------------+------------------+----------------+
+|      Clock Signal      |                       Enable Signal                      |                      Set/Reset Signal                     | Slice Load Count | Bel Load Count |
++------------------------+----------------------------------------------------------+-----------------------------------------------------------+------------------+----------------+
+|  clk_50MHZ             |                                                          | keyboard_inst/debounce/clear                              |                1 |              4 |
+|  clk50_BUFG            |                                                          |                                                           |                5 |              5 |
+|  clk_50MHZ             | keyboard_inst/debounce/cnt1[4]_i_2_n_0                   | keyboard_inst/debounce/cnt1[4]_i_1_n_0                    |                1 |              5 |
+|  clk_50MHZ             |                                                          |                                                           |                3 |              5 |
+| ~kclkf                 | DB/db_btns[0]                                            | DB/SR[0]                                                  |                3 |              5 |
+|  clk50_BUFG            | DB/previous_pixel_value_reg[5][0]                        |                                                           |                2 |              6 |
+|  clk_IBUF_BUFG         | keyboard_inst/keypress_reg[0][0]                         |                                                           |                5 |              7 |
+|  clk_IBUF_BUFG         | keyboard_inst/E[1]                                       | DB/SR[0]                                                  |                1 |              7 |
+| ~kclkf                 | keyboard_inst/key_press[6]_i_1_n_0                       | DB/SR[0]                                                  |                7 |              7 |
+|  clk_IBUF_BUFG         | keyboard_inst/E[0]                                       | DB/SR[0]                                                  |                2 |              7 |
+|  clk_IBUF_BUFG         | keyboard_inst/E[2]                                       | DB/SR[0]                                                  |                2 |              7 |
+|  clk50_BUFG            | Camera_Controller/I2C_Controller_inst/divider[7]_i_1_n_0 |                                                           |                2 |              8 |
+| ~kclkf                 |                                                          | DB/SR[0]                                                  |                4 |              9 |
+|  clk50_BUFG            | DB/temporal_filter_vga_green_reg[0][0]                   |                                                           |                4 |              9 |
+|  OV7670_XCLK_OBUF_BUFG | VGA/vCounter                                             | VGA/vCounter0                                             |                4 |             10 |
+|  clk50_BUFG            | Camera_Controller/I2C_Controller_inst/busy_sr0           | Camera_Controller/I2C_Controller_inst/data_sr[30]_i_1_n_0 |                4 |             11 |
+|  OV7670_XCLK_OBUF_BUFG |                                                          | VGA/blank                                                 |                4 |             12 |
+|  clk50_BUFG            | DB/E[0]                                                  | DB/SR[0]                                                  |                8 |             12 |
+| ~kclkf                 | keyboard_inst/int_address[11]_i_1_n_0                    | DB/SR[0]                                                  |                4 |             12 |
+|  clk_IBUF_BUFG         | Audio_gen/temp_data[14]_i_2_n_0                          | Audio_gen/temp_data[14]_i_1_n_0                           |                5 |             15 |
+|  clk50_BUFG            | Camera_Controller/I2C_Controller_inst/E[0]               | DB/SR[0]                                                  |                5 |             16 |
+|  clk50_BUFG            | DB/fltr_reg                                              | VGA/fltr_reg_reg[15]_3                                    |                4 |             16 |
+|  clk_IBUF_BUFG         | int_RGB_Red2                                             | RGB_Red1/counter                                          |                5 |             18 |
+|  OV7670_XCLK_OBUF_BUFG | VGA/address                                              | VGA/clear                                                 |                5 |             18 |
+|  clk50_BUFG            | Camera_Controller/I2C_Controller_inst/busy_sr0           |                                                           |               11 |             18 |
+|  clk_IBUF_BUFG         | int_RGB_Green2                                           | RGB_Green1/counter                                        |                5 |             18 |
+|  OV7670_PCLK_IBUF_BUFG | Frame_Collector/p_1_in                                   | OV7670_VSYNC_IBUF                                         |                5 |             19 |
+|  clk_IBUF_BUFG         | Audio_gen/PDM_data_reg                                   |                                                           |                6 |             20 |
+|  OV7670_PCLK_IBUF_BUFG |                                                          | OV7670_VSYNC_IBUF                                         |                5 |             20 |
+|  clk50_BUFG            | DB/avgY_reg[0][0]                                        |                                                           |               20 |             20 |
+|  clk50_BUFG            | DB/avgY_lpf                                              |                                                           |                8 |             20 |
+|  clk_IBUF_BUFG         |                                                          | DB/db_count[31]_i_1_n_0                                   |                8 |             31 |
+|  clk_IBUF_BUFG         | Audio_gen/recording_samples                              | Audio_gen/temp_data[14]_i_1_n_0                           |                8 |             32 |
+|  OV7670_PCLK_IBUF_BUFG | Frame_Collector/d_latch[15]_i_1_n_0                      |                                                           |               24 |             33 |
+|  clk50_BUFG            | Camera_Controller/I2C_Controller_inst/busy_sr0           | Camera_Controller/I2C_Controller_inst/busy_sr[31]_i_1_n_0 |                9 |             34 |
+|  clk_IBUF_BUFG         |                                                          | DB/SR[0]                                                  |               13 |             54 |
+|  clk_IBUF_BUFG         | DB/db_count[31]_i_1_n_0                                  |                                                           |               30 |             72 |
+|  OV7670_XCLK_OBUF_BUFG |                                                          |                                                           |               51 |             74 |
+|  clk50_BUFG            | VGA/sum_x_reg[0]                                         | DB/avgY_lpf                                               |               21 |             80 |
+|  clk_IBUF_BUFG         |                                                          |                                                           |               39 |             92 |
+|  clk50_BUFG            |                                                          | DB/SR[0]                                                  |              238 |            650 |
+|  clk50_BUFG            | VGA/data8_reg[0][0]                                      |                                                           |             2252 |           5760 |
++------------------------+----------------------------------------------------------+-----------------------------------------------------------+------------------+----------------+
+
+
